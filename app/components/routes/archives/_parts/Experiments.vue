@@ -1,17 +1,17 @@
 <script setup lang="ts">
-	import { sites } from "../_models/usePage";
+	import { experiments } from "../_models/usePage";
 	import { Glass, HorizontalList, VerticalList } from "@/components/shared/Sections";
 	import { PageTitle, Paragraph } from "@/components/shared/Typography";
 	import "./Archives.sass";
 </script>
 <template>
 	<Glass as="section">
-		<PageTitle icon="folder">構築一覧</PageTitle>
+		<PageTitle icon="folder">実験一覧</PageTitle>
 		<VerticalList>
-			<li v-for="site of sites">
-				<Paragraph class="archives_paragraph">{{ site.description }}</Paragraph>
+			<li v-for="experiment of experiments">
+				<Paragraph class="archives_paragraph">{{ experiment.description }}</Paragraph>
 				<HorizontalList class="monospace">
-					<li v-for="stack of site.stacks">{{ stack }}</li>
+					<li v-for="stack of experiment.stacks">{{ stack }}</li>
 				</HorizontalList>
 			</li>
 		</VerticalList>

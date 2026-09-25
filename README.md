@@ -17,7 +17,7 @@
 ## Replaced Features
 
 - SolidStart から Nuxt.js への翻訳（JSX → Vue テンプレート、Signal → Ref）
-- Meta 情報用共通コンポーネントから共通関数へ変更
+- Meta 生成機構を Next.js に合わせた上で適用（Solid JSX → Vue テンプレート、SiteMeta コンポーネント → siteMeta ファイル、MetaTags コンポーネント → useHead）
 - Shiki コードの色付け実行を useAsyncData() でビルド時に生成、クライアント時の実行なし
 
 ## Replaced Festival Repositories
@@ -32,6 +32,7 @@
 ## Related Articles
 
 - [同一サイトの 9 フレームワークパターンでのリプレイス祭](https://wings.hatenablog.com/entry/replaceFestival)
+- [Meta 生成機構祭](https://wings.hatenablog.com/entry/metaFestival)
 
 ## Folder Map
 

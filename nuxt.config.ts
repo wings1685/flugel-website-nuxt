@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import yaml from "@rollup/plugin-yaml";
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -24,5 +26,10 @@ export default defineNuxtConfig({
         {rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v6.2.0/css/all.css'},
       ]
     }
-  }
+  },
+  vite: {
+	plugins: [
+		yaml(),
+	],
+  },
 })

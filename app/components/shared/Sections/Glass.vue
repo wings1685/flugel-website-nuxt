@@ -3,7 +3,6 @@
 	import { Icon } from "../Utils";
 	import type { AsDiv, AsSection, AsLink } from "@/_global/types/components";
 	import type { IconProps } from "../Utils/Icon.vue";
-	import "./Glass.sass";
 
 	type Props = {
 		mini?: boolean;
@@ -28,3 +27,6 @@
 		<slot />
 	</div>
 </template>
+<style lang="sass">
+	@use "./Glass.sass"
+</style>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-	import { buildTitle } from "@/_global/lib/utils";
+	import { buildSiteMeta } from "@/components/routes/_models/siteMeta";
 	import { About, Blog, Terms } from "./_parts";
 
-	useHead(buildTitle({title: 'Home'}));
+	useHead(buildSiteMeta());
 </script>
 <template>
 	<main>

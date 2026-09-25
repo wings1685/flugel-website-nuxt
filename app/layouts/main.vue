@@ -5,7 +5,7 @@
 </script>
 <template>
 	<Header />
-	<NuxtPage />
+	<slot />
 	<Nav />
 	<Footer />
 	<Bg />

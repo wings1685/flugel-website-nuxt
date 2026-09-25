@@ -3,7 +3,6 @@
 	import { sleep } from "@/_global/lib/utils";
 	import { useStore } from "@/_global/piquo";
 	import type { Months } from "@/_global/lib/shared";
-	import "./Bg.sass";
 
 	const currentMonth = ref<Months>();
 	const { selectedMonth, setSelectedMonth } = useStore('selectedMonth');
@@ -57,3 +56,6 @@
 		<img v-if="selectedMonth()" id="selected_bg" :src="getSrcset(selectedMonth())" alt="" />
 	</div>
 </template>
+<style lang="sass">
+	@use "./Bg.sass"
+</style>

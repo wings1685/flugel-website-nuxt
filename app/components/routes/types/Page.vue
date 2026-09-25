@@ -1,10 +1,10 @@
 <script setup lang="ts">
-	import { buildTitle } from "@/_global/lib/utils";
+	import { buildSiteMeta } from "@/components/routes/_models/siteMeta";
 	import { DeepGuard, Exclude, Props } from "./_parts";
 	import { Box, Glass } from "@/components/shared/Sections";
 	import { PageTitle, Paragraph } from "@/components/shared/Typography";
 
-	useHead(buildTitle({title: 'Types'}));
+	useHead(buildSiteMeta({ dir: '/types' }));
 </script>
 <template>
 	<main>

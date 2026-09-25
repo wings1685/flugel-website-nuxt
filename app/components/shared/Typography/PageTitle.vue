@@ -2,7 +2,6 @@
 	import { Icon } from "../Utils/index.ts";
 	import type { IconProps } from "../Utils/Icon.vue";
 	import type { HAttributes } from "@/_global/types/components";
-	import "./PageTitle.sass";
 
 	type Props = HAttributes & {
 		icon: IconProps['type'];
@@ -17,3 +16,6 @@
 		</span>
 	</h1>
 </template>
+<style lang="sass">
+	@use "./PageTitle.sass"
+</style>

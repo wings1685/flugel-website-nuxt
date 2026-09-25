@@ -1,7 +1,6 @@
 <script setup lang="ts">
 	import { useStore } from "@/_global/piquo";
 	import { Glass } from "./";
-	import "./Header.sass";
 
 	const { navOpened, setNavOpened } = useStore('navOpened');
 	const route = useRoute();
@@ -39,3 +38,6 @@
 		</Glass>
 	</header>
 </template>
+<style lang="sass">
+	@use "./Header.sass"
+</style>

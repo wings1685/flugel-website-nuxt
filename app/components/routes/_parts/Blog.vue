@@ -3,7 +3,6 @@
 	import { Glass, VerticalList } from "@/components/shared/Sections";
 	import { PageTitle, Paragraph } from "@/components/shared/Typography";
 	import type { BlogEntries, BlogEntry } from "../_models/schema";
-	import "./Blog.sass";
 
 	const entries = ref<BlogEntry[]>([...Array(5)].map((_, i) => ({
 		title: '**********',
@@ -38,3 +37,6 @@
 		</VerticalList>
 	</Glass>
 </template>
+<style lang="sass">
+	@use "./Blog.sass"
+</style>

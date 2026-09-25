@@ -1,6 +1,5 @@
 <script setup lang="ts">
 	import type { SectionAttributes } from "@/_global/types/components";
-	import "./Section.sass";
 
 	const props = defineProps<SectionAttributes>();
 </script>
@@ -9,3 +8,6 @@
 		<slot />
 	</section>
 </template>
+<style lang="sass">
+	@use "./Section.sass"
+</style>

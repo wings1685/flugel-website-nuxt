@@ -3,7 +3,6 @@
 	import { useStore } from "@/_global/piquo";
 	import { Glass } from "./";
 	import type { Months } from "@/_global/lib/shared";
-	import "./Nav.sass";
 
 	const { selectedMonth, setSelectedMonth } = useStore('selectedMonth');
 
@@ -20,3 +19,6 @@
 		<Glass v-for="[key, name] of Object.entries(monthData)" as="div" mini isDark @click="(e) => handleClick(e, key)" class="btn_nav">{{ name }}</Glass>
 	</nav>
 </template>
+<style lang="sass">
+	@use "./Nav.sass"
+</style>

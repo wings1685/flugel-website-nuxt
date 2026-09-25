@@ -1,6 +1,5 @@
 <script setup lang="ts">
 	import type { DivAttributes } from "@/_global/types/components";
-	import "./Box.sass";
 
 	const props = defineProps<DivAttributes>();
 </script>
@@ -9,3 +8,6 @@
 		<slot />
 	</div>
 </template>
+<style lang="sass">
+	@use "./Box.sass"
+</style>

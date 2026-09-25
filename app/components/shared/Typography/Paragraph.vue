@@ -1,6 +1,5 @@
 <script setup lang="ts">
 	import type { ParagraphAttributes, DivAttributes } from "@/_global/types/components";
-	import "./Paragraph.sass";
 
 	type Props = (ParagraphAttributes & {
 		as?: 'p';
@@ -19,3 +18,6 @@
 		<slot />
 	</div>
 </template>
+<style lang="sass">
+	@use "./Paragraph.sass"
+</style>

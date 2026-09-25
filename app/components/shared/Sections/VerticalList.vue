@@ -1,6 +1,5 @@
 <script setup lang="ts">
 	import type { UListAttributes } from "@/_global/types/components";
-	import "./VerticalList.sass";
 
 	const props = defineProps<UListAttributes>();
 </script>
@@ -9,3 +8,6 @@
 		<slot />
 	</ul>
 </template>
+<style lang="sass">
+	@use "./VerticalList.sass"
+</style>

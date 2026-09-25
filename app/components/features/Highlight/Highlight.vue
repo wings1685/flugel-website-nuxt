@@ -1,6 +1,4 @@
 <script setup lang="ts">
-	import "./Highlight.sass";
-
 	type Props = {
 		code: string;
 		filename?: string;
@@ -13,3 +11,6 @@
 		<div class="shiki_wrapper" v-html="code" />
 	</div>
 </template>
+<style lang="sass">
+	@use "./Highlight.sass"
+</style>

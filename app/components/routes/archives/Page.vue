@@ -1,13 +1,13 @@
 <script setup lang="ts">
-	import { buildTitle } from "@/_global/lib/utils";
+	import { buildSiteMeta } from "@/components/routes/_models/siteMeta";
 	import { Archives, Experiments, Environment } from "./_parts";
 
-	useHead(buildTitle({title: 'Archives'}));
+	useHead(buildSiteMeta({ dir: '/archives' }));
 </script>
 <template>
 	<main>
 		<Environment />
-		<Experiments />>
+		<Experiments />
 		<Archives />
 	</main>
 </template>

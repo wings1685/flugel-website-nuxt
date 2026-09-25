@@ -1,6 +1,5 @@
 <script setup lang="ts">
-	import type { Directions, DivAttributes, Sizes } from "@/_global/types/components"
-	import "./Group.sass";
+	import type { Directions, DivAttributes, Sizes } from "@/_global/types/components";
 
 	type Props = DivAttributes & {
 		direction?: Directions;
@@ -13,3 +12,6 @@
 		<slot />
 	</div>
 </template>
+<style lang="sass">
+	@use "./Group.sass"
+</style>

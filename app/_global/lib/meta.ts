@@ -71,10 +71,10 @@ export const buildMeta = (props: Props) => {
 		const data = globData[yamlPath]?.default;
 		v.parse(MetaSchema, data);
 
-		const canOverrideTitle = !props.meta?.title || path !== pagePath;
+		const canOverrideTitle = !meta?.title || path !== pagePath;
 		setMeta(data, canOverrideTitle);
 	});
-	setMeta(props.meta);
+	setMeta(meta);
 
 	const title = metaData.titles.join(separator);
 

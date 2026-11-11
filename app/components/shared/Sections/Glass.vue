@@ -8,7 +8,7 @@
 		mini?: boolean;
 		isDark?: boolean;
 		href?: string;
-	} & ( | AsDiv | AsSection | ( AsLink & {
+	} & ( AsDiv | AsSection | ( AsLink & {
 		href: string;
 		icon?: IconProps['type'];
 		target?: '_blank';

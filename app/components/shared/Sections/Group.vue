@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import type { Directions, DivAttributes, Sizes } from "@/_global/types/components";
 
-	type Props = DivAttributes & {
+	type Props = /* @vue-ignore */ DivAttributes & {
 		direction?: Directions;
 		marginSize?: Extract<Sizes, 'small' | 'medium' | 'large' | 'none'>;
 	};

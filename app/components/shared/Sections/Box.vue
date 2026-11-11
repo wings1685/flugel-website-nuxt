@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import type { DivAttributes } from "@/_global/types/components";
 
-	const props = defineProps<DivAttributes>();
+	const props = defineProps</* @vue-ignore */ DivAttributes>();
 </script>
 <template>
 	<div v-bind="props" :class="`box ${props.class}`">

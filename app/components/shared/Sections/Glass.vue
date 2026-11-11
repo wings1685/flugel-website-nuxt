@@ -3,12 +3,13 @@
 	import { Icon } from "../Utils";
 	import type { AsDiv, AsSection, AsLink } from "@/_global/types/components";
 	import type { IconProps } from "../Utils/Icon.vue";
+import type { HTMLAttributes } from "vue";
 
 	type Props = {
 		mini?: boolean;
 		isDark?: boolean;
 		href?: string;
-	} & ( AsDiv | AsSection | ( AsLink & {
+	} & ( ({ as?: 'div'; } & /* @vue-ignore */ HTMLAttributes) | ({ as: 'section'; } & /* @vue-ignore */ AsSection) | ( { as: 'a'; } & /* @vue-ignore */ AsLink & {
 		href: string;
 		icon?: IconProps['type'];
 		target?: '_blank';

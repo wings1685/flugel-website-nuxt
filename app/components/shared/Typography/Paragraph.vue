@@ -1,9 +1,9 @@
 <script setup lang="ts">
 	import type { ParagraphAttributes, DivAttributes } from "@/_global/types/components";
 
-	type Props = (ParagraphAttributes & {
+	type Props = (/* @vue-ignore */ ParagraphAttributes & {
 		as?: 'p';
-	}) | (DivAttributes & {
+	}) | (/* @vue-ignore */ DivAttributes & {
 		as: 'div';
 	});
 

@@ -3,7 +3,7 @@
 	import type { IconProps } from "../Utils/Icon.vue";
 	import type { HAttributes } from "@/_global/types/components";
 
-	type Props = HAttributes & {
+	type Props = /* @vue-ignore */ HAttributes & {
 		icon: IconProps['type'];
 	};
 	const props = defineProps<Props>();

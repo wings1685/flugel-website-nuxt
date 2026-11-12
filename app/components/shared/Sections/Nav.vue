@@ -16,7 +16,7 @@
 </script>
 <template>
 	<nav class="wrapper">
-		<Glass v-for="[key, name] of Object.entries(monthData)" as="div" mini isDark @click="(e) => handleClick(e, key)" class="btn_nav">{{ name }}</Glass>
+		<Glass v-for="[key, name] of Object.entries(monthData)" as="div" mini isDark @click="(e) => handleClick(e, key)" class="btn_nav" data-testid="btnNav">{{ name }}</Glass>
 	</nav>
 </template>
 <style lang="sass">

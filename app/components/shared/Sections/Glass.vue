@@ -1,9 +1,9 @@
 <script setup lang="ts">
 	import { Section } from "./";
 	import { Icon } from "../Utils";
-	import type { AsDiv, AsSection, AsLink } from "@/_global/types/components";
+	import type { AsSection, AsLink } from "@/_global/types/components";
 	import type { IconProps } from "../Utils/Icon.vue";
-import type { HTMLAttributes } from "vue";
+	import type { HTMLAttributes } from "vue";
 
 	type Props = {
 		mini?: boolean;
